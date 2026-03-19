@@ -454,6 +454,62 @@
     }
 
     /* =============================================
+       ABOUT
+    ============================================= */
+    .about {
+      padding: var(--section-pad);
+      background: var(--white);
+    }
+
+    .about__inner {
+      max-width: var(--max-width);
+      margin-inline: auto;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .about__sidebar {
+      position: sticky;
+      top: 5rem;
+    }
+
+    .about__sidebar h2 {
+      margin-bottom: 1.25rem;
+    }
+
+    .about__sidebar .btn {
+      margin-top: 1.75rem;
+    }
+
+    .about__body p {
+      font-size: 1.0625rem;
+      color: var(--text-body);
+      max-width: 68ch;
+      margin-bottom: 1.5rem;
+    }
+    .about__body p:last-child { margin-bottom: 0; }
+
+    .about__divider {
+      width: 48px;
+      height: 3px;
+      background: var(--teal);
+      border-radius: 2px;
+      margin-bottom: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .about__inner {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      .about__sidebar {
+        position: static;
+      }
+    }
+
+    /* =============================================
        CTA BAND
     ============================================= */
     .cta-band {
@@ -570,6 +626,7 @@
         <ul class="nav__links">
           <li><a href="#services">Services</a></li>
           <li><a href="#pricing">Plans &amp; Pricing</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
 
@@ -584,6 +641,7 @@
       <div class="nav__mobile" id="mobile-menu">
         <a href="#services">Services</a>
         <a href="#pricing">Plans &amp; Pricing</a>
+        <a href="#about">About</a>
         <a href="#contact">Contact</a>
         <a href="#contact" style="color: var(--teal); font-weight: 500;">Get in touch</a>
       </div>
@@ -709,6 +767,42 @@
         </div>
 
       </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section class="about" id="about">
+    <div class="about__inner">
+
+      <div class="about__sidebar">
+        <span class="section-label">About us</span>
+        <h2>The people behind VirtuAllies</h2>
+        <a href="#contact" class="btn btn-teal">Get in touch</a>
+      </div>
+
+      <div class="about__body">
+        <div class="about__divider"></div>
+        <p>
+          My name is Sam and I live in Poole in Dorset. I have worked within the financial services industry
+          for over 34 years, and have gained extensive knowledge and understanding of how to support small businesses —
+          particularly with an ever-changing regulatory regime and the additional time pressures this creates.
+          I specialise in supporting Partners and Advisers of SJP with all areas of back-office support. Over the years
+          I have developed a hands-on approach and am able to balance all the administrative and client servicing needs
+          of a Practice. I have now taken the step to start my own business, offering my wealth of knowledge and skills
+          within my new role as a virtual assistant.
+        </p>
+        <p>
+          I am supported by a colleague who has extensive experience within the civil service and a wealth of
+          experience at executive level to support general business administration.
+        </p>
+        <p>
+          We provide a completely confidential, individually tailored service to each of our clients. Our time is
+          charged by the hour and you can use our services as little or as often as your business requires.
+          Whether you need us for a one-off project or for ongoing help, we will work to support you so you can
+          concentrate on running your business.
+        </p>
+      </div>
+
     </div>
   </section>
 
